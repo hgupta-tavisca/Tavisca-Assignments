@@ -117,19 +117,22 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CurrencyMismatch" xml:space="preserve">
-    <value>currency mismatch</value>
+  <data name="InvalidInputs" xml:space="preserve">
+    <value>"InvalidInputs: Coversion Not Possible to NULL type."</value>
   </data>
-  <data name="InvalidAmount" xml:space="preserve">
-    <value>invalid amount</value>
+  <data name="InvalidRate" xml:space="preserve">
+    <value>"InvalidRate: Rate returned is Invalid!!"</value>
   </data>
-  <data name="InvalidCurrency" xml:space="preserve">
-    <value>invalid currency</value>
+  <data name="InvalidResponse" xml:space="preserve">
+    <value>"InvalidResponse: Please Check teh response from URL!!"</value>
   </data>
-  <data name="InvalidInput" xml:space="preserve">
-    <value>invalid input</value>
+  <data name="NoResults" xml:space="preserve">
+    <value>"No Search Results Found For These Values!!!"</value>
   </data>
-  <data name="NullExcception" xml:space="preserve">
-    <value>null value</value>
+  <data name="NullInputs" xml:space="preserve">
+    <value>"InvalidInputs: Input Values cannot be NULL!!"</value>
+  </data>
+  <data name="TypeMismatch" xml:space="preserve">
+    <value>"TypeMismatch: Unable to Convert the value or the response has been changed!!"</value>
   </data>
 </root>

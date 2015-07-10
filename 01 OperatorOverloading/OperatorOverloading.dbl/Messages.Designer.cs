@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Operator_Overloading.Model {
+namespace OperatorOverloading.dbl {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Operator_Overloading.Model {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Operator_Overloading.Model.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OperatorOverloading.dbl.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,47 +61,56 @@ namespace Operator_Overloading.Model {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to currency mismatch.
+        ///   Looks up a localized string similar to &quot;InvalidInputs: Coversion Not Possible to NULL type.&quot;.
         /// </summary>
-        internal static string CurrencyMismatch {
+        internal static string InvalidInputs {
             get {
-                return ResourceManager.GetString("CurrencyMismatch", resourceCulture);
+                return ResourceManager.GetString("InvalidInputs", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to invalid amount.
+        ///   Looks up a localized string similar to &quot;InvalidRate: Rate returned is Invalid!!&quot;.
         /// </summary>
-        internal static string InvalidAmount {
+        internal static string InvalidRate {
             get {
-                return ResourceManager.GetString("InvalidAmount", resourceCulture);
+                return ResourceManager.GetString("InvalidRate", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to invalid currency.
+        ///   Looks up a localized string similar to &quot;InvalidResponse: Please Check teh response from URL!!&quot;.
         /// </summary>
-        internal static string InvalidCurrency {
+        internal static string InvalidResponse {
             get {
-                return ResourceManager.GetString("InvalidCurrency", resourceCulture);
+                return ResourceManager.GetString("InvalidResponse", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to invalid input.
+        ///   Looks up a localized string similar to &quot;No Search Results Found For These Values!!!&quot;.
         /// </summary>
-        internal static string InvalidInput {
+        internal static string NoResults {
             get {
-                return ResourceManager.GetString("InvalidInput", resourceCulture);
+                return ResourceManager.GetString("NoResults", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to null value.
+        ///   Looks up a localized string similar to &quot;InvalidInputs: Input Values cannot be NULL!!&quot;.
         /// </summary>
-        internal static string NullExcception {
+        internal static string NullInputs {
             get {
-                return ResourceManager.GetString("NullExcception", resourceCulture);
+                return ResourceManager.GetString("NullInputs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;TypeMismatch: Unable to Convert the value or the response has been changed!!&quot;.
+        /// </summary>
+        internal static string TypeMismatch {
+            get {
+                return ResourceManager.GetString("TypeMismatch", resourceCulture);
             }
         }
     }
