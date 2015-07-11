@@ -1,22 +1,25 @@
 ﻿using System;
-using OperatorOverloading.Model;
-using Operator_Overloading.Model;
+using System.Net;
 
-namespace OperatorOverloading.Model
+
+namespace OperatorOverloading.Interfaces
 {
     public class Money
     {
         private double _amount;
         private string _currency;
-
         public double Amount
         {
             get { return _amount; }
             private set
             {
+                if (value < 0)
+                {
+                    throw new Exception(Messages.AmountNegative);
+                }
                 if (double.IsInfinity(value))
                 {
-                    throw new OverflowException();
+                    throw new Exception(Messages.AmountTooLarge);
                 }
                 _amount = value;
             }
@@ -29,7 +32,11 @@ namespace OperatorOverloading.Model
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new InvalidCurrencyException(Messages.InvalidCurrency);
+                    throw new Exception(Messages.InvalidCurrency);
+                }
+                if (value.Length != 3)
+                {
+                    throw new Exception(Messages.InvalidCurrency);
                 }
                 _currency = value;
             }
@@ -46,7 +53,7 @@ namespace OperatorOverloading.Model
 
             if (string.IsNullOrWhiteSpace(inputAmount))
             {
-                throw new System.Exception(Messages.NullExcception);
+                throw new Exception(Messages.NullValue);
             }
 
             var amountArr = inputAmount.Split(' ');
@@ -54,7 +61,7 @@ namespace OperatorOverloading.Model
 
             if (amountArr.Length != 2)
             {
-                throw new System.Exception();
+                throw new Exception(Messages.InvalidInput);
             }
 
             if (double.TryParse(amountArr[0], out amount))
@@ -63,32 +70,31 @@ namespace OperatorOverloading.Model
             }
             else
             {
-                throw new System.Exception(Messages.InvalidAmount);
+                throw new Exception(Messages.InvalidAmount);
             }
 
             Currency = amountArr[1];
         }
+        public Money Convert(string convertTo)
+        {
+            double result;
+            result = new OperatorOverloading.Dbl.Convert().ConversionRate(Currency, convertTo);
+          
+           
+            return new Money(result * Amount, convertTo);
+        }
 
         public static Money operator +(Money obj1, Money obj2)
         {
-            if (obj1 == null || obj2 == null)
-            {
-                throw new Exception(Messages.NullExcception);
-            }
-            if (obj1.Currency.Equals(obj2.Currency, StringComparison.OrdinalIgnoreCase))
-            {
+           
                 double totalAmount = obj1.Amount + obj2.Amount;
                 return new Money(totalAmount, obj1.Currency);
-            }
-            else
-            {
-                throw new System.Exception(Messages.CurrencyMismatch);
-            }
+            
         }
 
-        public override string ToString()
-        {
-            return Amount + " " + Currency;
-        }
+       
+        
+
+        
     }
 }

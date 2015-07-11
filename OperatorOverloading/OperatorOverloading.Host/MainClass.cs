@@ -1,5 +1,7 @@
-﻿using System;
-using OperatorOverloading.Model;
+﻿
+using OperatorOverloading.Interfaces;
+using System;
+
 
 namespace OperatorOverloading.Host
 {
@@ -7,21 +9,24 @@ namespace OperatorOverloading.Host
     {
         public static void Main(string[] args)
         {
+          
             Money amount1 = null;
             Money amount2 = null;
-            Money money3 = null;
+            Money amount3 = null;
+            string currency;
+           
             while (true)
             {
                 try
                 {
-                    Console.Write("Enter Amount 1 (Amount Currency): ");
+                    Console.Write("Enter Amount  and currency : ");
                     amount1 = new Money(Console.ReadLine());
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception Occured.");
                     Console.WriteLine(e.Message);
-                    
+
                     continue;
                 }
                 break;
@@ -30,22 +35,27 @@ namespace OperatorOverloading.Host
             {
                 try
                 {
-                    Console.Write("Enter Amount 2 (Amount Currency): ");
-                     amount2 = new Money(Console.ReadLine());
+                    Console.Write("Enter Currency ");
+                    currency = Console.ReadLine();
                 }
                 catch (Exception e)
                 {
                     Console.WriteLine("Exception Occured.");
                     Console.WriteLine(e.Message);
-                    
+
                     continue;
                 }
                 break;
 
             }
+           
             try
             {
-                money3 = amount1 + amount2;
+               
+                amount2 = amount1.Convert(currency);
+               
+              
+               
             }
             catch (Exception e)
             {
@@ -54,7 +64,8 @@ namespace OperatorOverloading.Host
                 return;
             }
             Console.Write("The Total Amount is: ");
-            Console.Write(money3.Amount);
+            Console.Write(amount3.Amount);
+            Console.Write(amount3.Currency);
             Console.ReadKey();
         }
     }

@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5C158F2-3D05-4883-A7A2-6418C90811CD}</ProjectGuid>
+    <ProjectGuid>{3CFEC4FB-5327-4042-BB2F-53DB67980A13}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Operator_Overloading.Host</RootNamespace>
-    <AssemblyName>Operator Overloading.Host</AssemblyName>
+    <RootNamespace>OperatorOverloading.Host</RootNamespace>
+    <AssemblyName>OperatorOverloading.Host</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -41,16 +41,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Messages.Designer.cs" />
+    <Compile Include="Money.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Operator Overloading.Model\Operator Overloading.Model.csproj">
-      <Project>{d3537cea-6d8f-4f66-8e20-700239c86a4d}</Project>
-      <Name>Operator Overloading.Model</Name>
+    <EmbeddedResource Include="Messages.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\OperatorOverloading.Interfaces\OperatorOverloading.Interfaces.csproj">
+      <Project>{f2209e11-aa55-447a-9113-391f108446ca}</Project>
+      <Name>OperatorOverloading.Interfaces</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Operator_Overloading.Model {
+namespace OperatorOverloading.Interfaces {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Operator_Overloading.Model {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Operator_Overloading.Model.Messages", typeof(Messages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("OperatorOverloading.Model.Messages", typeof(Messages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,16 +61,25 @@ namespace Operator_Overloading.Model {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to currency mismatch.
+        ///   Looks up a localized string similar to &quot;InvalidAmount: Amount Cannot be Negative.&quot;.
         /// </summary>
-        internal static string CurrencyMismatch {
+        internal static string AmountNegative {
             get {
-                return ResourceManager.GetString("CurrencyMismatch", resourceCulture);
+                return ResourceManager.GetString("AmountNegative", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to invalid amount.
+        ///   Looks up a localized string similar to &quot;InvalidAmount: Amount is too large.&quot;.
+        /// </summary>
+        internal static string AmountTooLarge {
+            get {
+                return ResourceManager.GetString("AmountTooLarge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;InvalidAmount: Please Enter Proper Amount Values.&quot;.
         /// </summary>
         internal static string InvalidAmount {
             get {
@@ -79,7 +88,7 @@ namespace Operator_Overloading.Model {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to invalid currency.
+        ///   Looks up a localized string similar to &quot;InvalidCurrency: Input Currency Cannot be NULL.&quot;.
         /// </summary>
         internal static string InvalidCurrency {
             get {
@@ -88,7 +97,7 @@ namespace Operator_Overloading.Model {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to invalid input.
+        ///   Looks up a localized string similar to &quot;InvalidInput: Input Should be of type &lt;Amt&gt; &lt;Curr&gt;&quot;.
         /// </summary>
         internal static string InvalidInput {
             get {
@@ -97,11 +106,20 @@ namespace Operator_Overloading.Model {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to null value.
+        ///   Looks up a localized string similar to &quot;MismatchedCurrency: Please Enter Currency of the Same Type!!&quot;.
         /// </summary>
-        internal static string NullExcception {
+        internal static string MismatchedCurrency {
             get {
-                return ResourceManager.GetString("NullExcception", resourceCulture);
+                return ResourceManager.GetString("MismatchedCurrency", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &quot;Null Value in not Allowed.&quot;.
+        /// </summary>
+        internal static string NullValue {
+            get {
+                return ResourceManager.GetString("NullValue", resourceCulture);
             }
         }
     }

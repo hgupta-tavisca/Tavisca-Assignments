@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Dbl", "OperatorOverloading.Dbl\OperatorOverloading.Dbl.csproj", "{542E7B8B-C060-4701-BA92-F884374DC485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Interfaces", "OperatorOverloading.Interfaces\OperatorOverloading.Interfaces.csproj", "{F2209E11-AA55-447A-9113-391F108446CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Model", "OperatorOverloading.Model\OperatorOverloading.Model.csproj", "{3CFEC4FB-5327-4042-BB2F-53DB67980A13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OperatorOverloading.Host", "OperatorOverloading.Host\OperatorOverloading.Host.csproj", "{61C51D50-2775-43DB-AD8B-6A363C43D739}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{542E7B8B-C060-4701-BA92-F884374DC485}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542E7B8B-C060-4701-BA92-F884374DC485}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542E7B8B-C060-4701-BA92-F884374DC485}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542E7B8B-C060-4701-BA92-F884374DC485}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2209E11-AA55-447A-9113-391F108446CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2209E11-AA55-447A-9113-391F108446CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2209E11-AA55-447A-9113-391F108446CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2209E11-AA55-447A-9113-391F108446CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFEC4FB-5327-4042-BB2F-53DB67980A13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFEC4FB-5327-4042-BB2F-53DB67980A13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFEC4FB-5327-4042-BB2F-53DB67980A13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFEC4FB-5327-4042-BB2F-53DB67980A13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61C51D50-2775-43DB-AD8B-6A363C43D739}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61C51D50-2775-43DB-AD8B-6A363C43D739}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61C51D50-2775-43DB-AD8B-6A363C43D739}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61C51D50-2775-43DB-AD8B-6A363C43D739}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
