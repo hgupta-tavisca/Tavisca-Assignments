@@ -8,6 +8,6 @@ namespace OperatorOverloading.Interfaces
 {
     interface IExchangeRateProvider
     {
-        double FetchingData(string from, string to);
+        double ConversionRate(string from, string to);
     }
 }

@@ -14,16 +14,7 @@ namespace OperatorOverloading.Dbl
             double convertFactor;
             string jsonData = null; ;
 
-            using (StreamReader sr = System.IO.File.OpenText(@"D:\Training\01 OperatorOverloading\OperatorOverloading.Model\Data.txt"))
-            {
-
-                while ((jsonData = sr.ReadLine()) != null)
-                {
-
-                }
-
-            }
-
+            jsonData = System.IO.File.ReadAllText(@"D:\Training\01 OperatorOverloading\OperatorOverloading.Model\Data.txt");
             string searchString = from.ToUpper() + to.ToUpper();
             convertFactor = Parse(jsonData, searchString);
             if (convertFactor < 0)
