@@ -1,0 +1,2 @@
+D:\OperatorOverloading\OperatorOverloading.Interfaces\obj\Debug\OperatorOverloading.Interfaces.csprojResolveAssemblyReference.cache
+D:\OperatorOverloading\OperatorOverloading.Interfaces\bin\Debug\OperatorOverloading.Interfaces.exe.config

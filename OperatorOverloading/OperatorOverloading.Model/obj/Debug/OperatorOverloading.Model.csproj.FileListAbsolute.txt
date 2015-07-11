@@ -1,0 +1,5 @@
+D:\OperatorOverloading\OperatorOverloading.Host\obj\Debug\OperatorOverloading.Model.csprojResolveAssemblyReference.cache
+D:\OperatorOverloading\OperatorOverloading.Host\obj\Debug\OperatorOverloading.Host.Messages.resources
+D:\OperatorOverloading\OperatorOverloading.Host\obj\Debug\OperatorOverloading.Model.csproj.GenerateResource.Cache
+D:\OperatorOverloading\OperatorOverloading.Model\obj\Debug\OperatorOverloading.Host.Messages.resources
+D:\OperatorOverloading\OperatorOverloading.Model\obj\Debug\OperatorOverloading.Model.csproj.GenerateResource.Cache

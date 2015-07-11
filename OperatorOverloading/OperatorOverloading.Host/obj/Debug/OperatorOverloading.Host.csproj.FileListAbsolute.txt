@@ -1,0 +1,3 @@
+D:\OperatorOverloading\OperatorOverloading\bin\Debug\OperatorOverloading.exe.config
+D:\OperatorOverloading\OperatorOverloading.Host\bin\Debug\OperatorOverloading.exe.config
+D:\OperatorOverloading\OperatorOverloading.Host\obj\Debug\OperatorOverloading.Host.csprojResolveAssemblyReference.cache
